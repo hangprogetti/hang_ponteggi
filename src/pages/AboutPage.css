@@ -1,0 +1,9 @@
+.leaflet-container .leaflet-control-attribution {
+  display: none;
+}
+
+.text-green-600 {
+  color: #7bb62e; /* Tailwind green-600 color */
+  text-decoration: none; /* Remove underline */
+}
+
