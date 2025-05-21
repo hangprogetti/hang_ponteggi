@@ -17,7 +17,7 @@ const ContactPage = () => {
   });
   const [formStatus, setFormStatus] = useState<null | 'success' | 'error'>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => { 
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
