@@ -78,9 +78,9 @@ Operiamo con competenza e flessibilità in ambito infrastrutturale, civile e ind
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              Da oltre vent'anni, <span className="text-green-600 font-bold">HANG</span> è sinonimo di eccellenza nel settore dei ponteggi. 
-              La nostra esperienza, unita all'impegno costante per la sicurezza e la qualità, 
-              ci rende il partner ideale per ogni progetto edilizio.
+              Da anni, <span className="text-green-600 font-bold">HANG</span> Ponteggi rappresenta un punto di riferimento a livello nazionale nel settore dell’installazione e del noleggio di ponteggi.
+La nostra esperienza pluriennale si fonda su un percorso di crescita costante , caratterizzato da progetti complessi, soluzioni tecnologicamente avanzate e un’attenzione rigorosa agli standard di sicurezza.
+Ogni intervento è il risultato di competenza tecnica , affidabilità operativa e un forte orientamento alla soddisfazione del cliente.
             </motion.p>
             <div className="grid md:grid-cols-3 gap-8">
               <motion.div 
