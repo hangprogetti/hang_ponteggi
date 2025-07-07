@@ -29,13 +29,13 @@ const HomePage = () => {
               Ponteggi sicuri e certificati per ogni esigenza edilizia
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl mb-8 max-w-2xl"
+              className="text-xl md:text-2xl mb-8 max-w-4xl"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              Azienda Italiana dinamica e in costante crescita specializzata nel noleggio ed installazione di ponteggi, 
-              coperture provvisorie e montacarichi.
+              Siamo un’azienda italiana giovane, dinamica e in continua espansione, specializzata nella fornitura, noleggio e installazione di ponteggio, coperture provvisorie e montacarichi da cantiere in tutta la penisola italiana.
+Operiamo con competenza e flessibilità in ambito infrastrutturale, civile e industriale offrendo soluzioni personalizzate e tecnologicamente avanzate per soddisfare le esigenze di sicurezza, efficienza e rapidità di ogni progetto.
             </motion.p>
             <motion.div 
               className="flex flex-col sm:flex-row gap-4"
