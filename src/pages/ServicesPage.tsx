@@ -29,9 +29,8 @@ const ServicesPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Offriamo soluzioni complete per ogni esigenza di ponteggio, 
-            dalla progettazione alla manutenzione. La nostra esperienza 
-            garantisce sicurezza e qualità in ogni fase del progetto.
+            Dalla progettazione alla manutenzione, offriamo soluzioni di ponteggio su misura, pensate per ogni tipo di esigenza.
+            Grazie alla nostra esperienza, garantiamo massima sicurezza e qualità in ogni fase del progetto.
           </motion.p>
         </div>
       </div>

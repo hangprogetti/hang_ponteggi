@@ -105,19 +105,22 @@ const AboutPage = () => {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">La Nostra Storia</h2>
             <p className="text-gray-600 mb-4">
-              Fondata nel 2004, <span className="text-green-600 font-bold">HANG</span> Ponteggi nasce dalla passione per l'edilizia e 
-              dalla volontà di offrire servizi di ponteggio di alta qualità. Nel 
-              corso degli anni, abbiamo costantemente investito in formazione e 
-              attrezzature all'avanguardia.
+              Fondata nel 2022, HANG Ponteggi nasce dall’unione tra una profonda passione per il settore dell’edilizia e l’ambizione di offrire 
+              soluzioni di ponteggio altamente specializzate, sicure e tecnologicamente avanzate.
             </p>
             <p className="text-gray-600 mb-4">
-              Oggi siamo orgogliosi di essere partner di alcune delle più importanti 
-              imprese edili italiane, contribuendo alla realizzazione di progetti 
-              significativi in tutto il territorio nazionale.
+              Fin dall’inizio, l’azienda ha posto al centro del proprio sviluppo l’innovazione e la crescita professionale, investendo 
+              costantemente nella formazione del personale, nell’adozione di tecniche all’avanguardia e nella progettazione di opere 
+              provvisionali studiate in base alle esigenze del singolo cantiere.
             </p>
-            <p className="text-gray-600">
-              La nostra missione rimane invariata: garantire sicurezza, qualità e 
-              professionalità in ogni progetto, grande o piccolo che sia.
+            <p className="text-gray-600 mb-4">
+              Nel corso degli anni, questo approccio ci ha permesso di affermarci come partner affidabile e qualificato per alcune 
+              delle principali imprese edili italiane, supportandole nella realizzazione di progetti complessi e di rilevanza strategica 
+              su tutto il territorio nazionale.
+            </p>
+            <p className="text-gray-600 mb-4">
+             La nostra missione è chiara e immutata: offrire soluzioni di ponteggio che garantiscano i più elevati standard di sicurezza, 
+             qualità esecutiva e professionalità, indipendentemente dalla dimensione o dalla complessità dell’intervento.
             </p>
           </div>
           <div className="relative h-96">

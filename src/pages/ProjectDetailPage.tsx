@@ -74,9 +74,8 @@ const ProjectDetailPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Esplora alcuni dei nostri progetti più significativi. Ogni lavoro 
-            rappresenta il nostro impegno per l'eccellenza e la sicurezza nel 
-            settore dei ponteggi.
+            Scopri una selezione dei nostri interventi più rappresentativi.
+            Ogni progetto riflette la nostra competenza, l’attenzione alla sicurezza e l’impegno costante per l’eccellenza nel settore dei ponteggi.
           </motion.p>
         </div>
       </div>

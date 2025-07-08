@@ -29,7 +29,7 @@ const HomePage = () => {
               Ponteggi sicuri e certificati per ogni esigenza edilizia
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl mb-8 max-w-4xl"
+              className="text-xl md:text-2xl mb-8 max-w-5xl"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -93,8 +93,8 @@ Ogni intervento è il risultato di competenza tecnica , affidabilità operativa 
                 <Award className="h-12 w-12 text-green-600 mb-4 mx-auto" />
                 <h3 className="text-xl font-semibold mb-4">Professionalità</h3>
                 <p className="text-gray-600">
-                  Team altamente qualificato e certificato per garantire 
-                  installazioni sicure e a regola d'arte.
+                  Un team di tecnici altamente qualificati e di personale altamente formato, in grado di garantire installazioni versatili, sicure, 
+                  conformi alle normative vigenti e realizzate secondo i più elevati standard di qualità.
                 </p>
               </motion.div>
               <motion.div 
@@ -107,8 +107,10 @@ Ogni intervento è il risultato di competenza tecnica , affidabilità operativa 
                 <Shield className="h-12 w-12 text-green-600 mb-4 mx-auto" />
                 <h3 className="text-xl font-semibold mb-4">Sicurezza</h3>
                 <p className="text-gray-600">
-                  Utilizziamo solo materiali certificati e seguiamo rigorosamente 
-                  tutte le normative di sicurezza.
+                  Adottiamo esclusivamente materiali certificati secondo le normative europee di riferimento, selezionati per garantire massima resistenza , 
+                  affidabilità e durata nel tempo, in collaborazione con i più noti marchi del settore.
+                  Ogni fase del nostro lavoro è condotta nel rigoroso rispetto delle normative di sicurezza vigenti, 
+                  con procedure operative costantemente aggiornate per assicurare la tutela di operatori, clienti e ambienti di lavoro.
                 </p>
               </motion.div>
               <motion.div 
@@ -121,8 +123,8 @@ Ogni intervento è il risultato di competenza tecnica , affidabilità operativa 
                 <CheckCircle className="h-12 w-12 text-green-600 mb-4 mx-auto" />
                 <h3 className="text-xl font-semibold mb-4">Affidabilità</h3>
                 <p className="text-gray-600">
-                  Rispettiamo sempre le tempistiche e gli impegni presi, 
-                  garantendo un servizio impeccabile.
+                  Rispettiamo scrupolosamente le tempistiche concordate e gli impegni assunti, 
+                  assicurando un servizio puntuale, efficiente e di elevata qualità in ogni fase del progetto, dalla fase preventiva fino a quella esecutiva.
                 </p>
               </motion.div>
             </div>
