@@ -224,9 +224,18 @@ const ContactPage = () => {
                 <div className="flex items-start space-x-4">
                   <MapPin className="h-6 w-6 text-green-600 mt-1" />
                   <div>
-                    <h4 className="text-lg font-semibold">Sede</h4>
-                    <p className="text-gray-600">Via dei Ponteggi, 123</p>
-                    <p className="text-gray-600">20100 Milano (MI)</p>
+                    <h4 className="text-lg font-semibold">Sede Operativa</h4>
+                    <p className="text-gray-600">Via del Lvaoro, 12</p>
+                    <p className="text-gray-600">28040 Borgo Ticino (NO)</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <MapPin className="h-6 w-6 text-green-600 mt-1" />
+                  <div>
+                    <h4 className="text-lg font-semibold">Sede Legale</h4>
+                    <p className="text-gray-600">Via S. Sonnino, 57</p>
+                    <p className="text-gray-600">09127 Cagliari</p>
                   </div>
                 </div>
 

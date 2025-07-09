@@ -18,13 +18,22 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const handleLogoClick = () => {
+    setIsOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-22">
           <div className="flex items-center">
-            <Link to="/" className="flex items-center" onClick={handleLinkClick}>
-              <img src="/assets/img/logo.png" alt="HANG Logo" className="h-36 w-38" />
+            <Link to="/" className="flex items-center" onClick={handleLogoClick}>
+              <img 
+                src="/assets/img/logo.png" 
+                alt="HANG Logo" 
+                className="h-44 w-46 drop-shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out" 
+              />
             </Link>
           </div>
           

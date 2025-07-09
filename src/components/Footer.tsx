@@ -91,9 +91,9 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contatti</h3>
             <ul className="space-y-2">
-              <li className="text-gray-400">Via dei Ponteggi, 123</li>
-              <li className="text-gray-400">20100 Milano (MI)</li>
-              <li className="text-gray-400">Tel: +39 02 1234567</li>
+              <li className="text-gray-400">Via del Lavoro, 12</li>
+              <li className="text-gray-400">28040 Borgo Ticino (NO)</li>
+              <li className="text-gray-400">Tel: +39 02 871 8660</li>
               <li className="text-gray-400">Email: info@hangponteggi.it</li>
             </ul>
           </div>
