@@ -48,7 +48,7 @@ const PortfolioPage = () => {
             >
               <Link to={`/progetto/${index}`} className="w-full md:w-1/2">
                 <img 
-                  src={project.prjectImage} 
+                  src={project.projectImage} 
                   alt={project.title}
                   className="w-full h-96 object-cover rounded-lg shadow-lg"
                 />

@@ -1,19 +1,17 @@
 export const projects = [
   {
     video: "/assets/video/abbazia.mp4",
-    title: "Restauro Abbazia di San Miniato Al Monte",
-    prjectImage: "/assets/img/abbazia.jpg",
-    shortDescription: `Realizzazione di interventi di restauro e consolidamento strutturale delle capriate lignee dell'Abbazia di San Miniato al Monte, 
-      finalizzati alla conservazione e valorizzazione dell’edificio...`,
-    description: `Realizzazione di interventi di restauro e consolidamento strutturale delle capriate lignee dell'Abbazia di San Miniato al Monte, 
-    finalizzati alla conservazione e valorizzazione dell’edificio storico. Le operazioni includono l’analisi dello stato di degrado del legno, 
-    il trattamento di protezione contro agenti biologici e atmosferici, il rinforzo delle strutture portanti e il recupero estetico nel rispetto 
-    delle tecniche e dei materiali originali, garantendo la salvaguardia del patrimonio architettonico dell’abbazia.`,
+    title: "Hang Srl al lavoro sulla storica chiesa di Santa Maria Novella, Firenze",
+    projectImage: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276368/abbazia_ljwxuq.webp",
+    shortDescription: `Ponteggio temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze...`,
+    description: `Ponteggio temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze e dell’arte rinascimentale. Grazie alla nostra esperienza e alle tecnologie all’avanguardia, Hang Srl ha realizzato una struttura sicura, robusta e rispettosa dell’ambiente circostante, permettendo ai restauratori di operare nel massimo rispetto del patrimonio artistico e architettonico.
+Un intervento pensato per valorizzare e preservare uno dei capolavori storici della città, confermando il nostro impegno nella tutela dei beni culturali.`,
     images: [
-      "/assets/img/abbazia1.jpg",
-      "/assets/img/abbazia2.jpg",
-      "/assets/img/abbazia3.jpg",
-      "/assets/img/abbazia4.jpg"
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276369/abbazia1_v2bpee.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276369/abbazia2_ltsbcc.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276369/abbazia3_km9sb5.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276377/abbazia4_caybqp.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276676/abbazia5_fuxggu.webp"
     ],
     details: {
       dove: "Firenze",
@@ -25,7 +23,7 @@ export const projects = [
   {
     video: "/assets/video/ponte_genova.mp4",
     title: "Installazione Passerella Sospesa Multidirezionale",
-    prjectImage: "/assets/img/genova.jpg",
+    projectImage: "/assets/img/genova.jpg",
     shortDescription: `La realizzazione di una passerella sospesa multidirezionale, progettata per garantire un accesso sicuro e pratico durante gli interventi 
       di manutenzione e lavori sul cordolo est, in direzione...`,
     description: `La realizzazione di una passerella sospesa multidirezionale, progettata per garantire un accesso sicuro e pratico durante gli interventi 
@@ -48,15 +46,17 @@ export const projects = [
     }
   },
   {
-    video: "/assets/video/ponte.mp4",
-    title: "Manutenzione Straordinaria Ponte Sesto Calende",
-    prjectImage: "/assets/img/ponte.jpg",
-    shortDescription: `Intervento di manutenzione straordinaria del ponte sul fiume Ticino a Sesto Calende.`,
-    description: "Intervento di manutenzione straordinaria del ponte sul fiume Ticino a Sesto Calende.",
+    video: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende_vinqql.webp",
+    title: "Ponteggio sospeso per far risplendere il ponte di ferro a Sesto Calende (VA)",
+    projectImage: "/assets/img/ponte.jpg",
+    shortDescription: `Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio per un intervento di manutenzione straordinaria...`,
+    description: "Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio per un intervento di manutenzione straordinaria sulla travata metallica. Un lavoro cruciale per mantenere saldo il collegamento tra Piemonte e Lombardia.",
     images: [
-      "/assets/img/ponte1.jpg",
-      "/assets/img/ponte2.jpg",
-      "/assets/img/ponte3.jpg"
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277488/ponte_calende1_zhdtit.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277489/ponte_calende2_uzpbfi.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277485/ponte_calende3_e7dzdz.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277487/ponte_calende4_nrulof.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende5_xmphah.webp"
     ],
     details: {
       dove: "Sesto Calende",

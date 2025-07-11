@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { projects } from '../data/projects'; // Import the projects array
 
 const NextArrow = (props: any) => {
@@ -145,6 +145,38 @@ const ProjectDetailPage = () => {
                 Ogni progetto è unico e rappresenta il nostro impegno per la qualità e la sicurezza. 
                 Scopri i dettagli e le sfide affrontate in ciascuno dei nostri lavori.
               </p>
+                <p className="text-xl text-gray-600 mb-6">
+                Vuoi scoprire altri progetti e vedere il nostro lavoro in azione? Seguici sui social per esplorare foto, video e aggiornamenti sui nostri interventi più recenti!
+                </p>
+              <div className="flex justify-center space-x-6">
+                <a 
+                  href="https://www.instagram.com/hangponteggi.it/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-pink-500 text-white px-6 py-3 rounded-lg hover:bg-pink-600 transition-colors"
+                >
+                  <Instagram className="h-5 w-5 mr-2" />
+                  Instagram
+                </a>
+                <a 
+                  href="https://www.facebook.com/hangponteggi/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  <Facebook className="h-5 w-5 mr-2" />
+                  Facebook
+                </a>
+                <a 
+                  href="https://it.linkedin.com/company/hang-srl/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center bg-blue-800 text-white px-6 py-3 rounded-lg hover:bg-blue-900 transition-colors"
+                >
+                  <Linkedin className="h-5 w-5 mr-2" />
+                  LinkedIn
+                </a>
+              </div>
             </div>
           </motion.div>
 
@@ -159,7 +191,7 @@ const ProjectDetailPage = () => {
             <Slider {...settings}>
               {project.images.map((image, index) => (
                 <div key={index} className="px-4">
-                  <img src={image} alt={`Project image ${index + 1}`} className="w-full h-[34rem] object-cover rounded-lg" />
+                  <img src={image} alt={`Project image ${index + 1}`} className="w-full h-[42rem] object-cover rounded-lg" />
                 </div>
               ))}
             </Slider>
