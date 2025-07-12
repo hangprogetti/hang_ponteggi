@@ -46,9 +46,9 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
     }
   },
   {
-    video: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende_vinqql.webp",
+    video: "/assets/video/ponte.mp4",
     title: "Ponteggio sospeso per far risplendere il ponte di ferro a Sesto Calende (VA)",
-    projectImage: "/assets/img/ponte.jpg",
+    projectImage: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende_vinqql.webp",
     shortDescription: `Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio per un intervento di manutenzione straordinaria...`,
     description: "Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio per un intervento di manutenzione straordinaria sulla travata metallica. Un lavoro cruciale per mantenere saldo il collegamento tra Piemonte e Lombardia.",
     images: [
