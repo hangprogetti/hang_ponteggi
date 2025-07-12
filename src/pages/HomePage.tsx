@@ -117,13 +117,9 @@ const HomePage = () => {
                 <Shield className="h-10 w-10 sm:h-12 sm:w-12 text-green-600 mb-4 mx-auto" />
                 <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Sicurezza</h3>
                 <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  Adottiamo esclusivamente materiali certificati secondo le normative europee di riferimento, selezionati per garantire massima resistenza, 
-                  affidabilità e durata nel tempo, in collaborazione con i più noti marchi del settore.
-                  <br className="hidden sm:block" />
-                  <span className="block mt-2 sm:inline sm:mt-0">
-                    Ogni fase del nostro lavoro è condotta nel rigoroso rispetto delle normative di sicurezza vigenti, 
-                    con procedure operative costantemente aggiornate per assicurare la tutela di operatori, clienti e ambienti di lavoro.
-                  </span>
+                  Adottiamo esclusivamente materiali certificati secondo le normative europee di 
+                  riferimento, selezionati per garantire massima resistenza, affidabilità e durata nel tempo, in 
+                  collaborazione con i più noti marchi del settore
                 </p>
               </motion.div>
               <motion.div 
