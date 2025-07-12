@@ -7,16 +7,16 @@ const ServicesPage = () => {
   return (
     <div className="pt-0">
       {/* Hero Section */}
-      <div className="relative w-full h-[50vh] overflow-hidden mb-16">
+      <div className="relative w-full h-[40vh] sm:h-[50vh] overflow-hidden mb-8 sm:mb-16">
         <img 
           src="/assets/img/servizi.jpg" 
           alt="Hero Image" 
           className="absolute inset-0 w-full h-full object-cover filter blur-sm"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 flex items-center justify-center h-full flex-col">
+        <div className="relative z-10 flex items-center justify-center h-full flex-col px-4">
           <motion.h1 
-            className="text-4xl font-bold text-white mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-3 sm:mb-4 text-center"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
@@ -24,7 +24,7 @@ const ServicesPage = () => {
             I Nostri Servizi
           </motion.h1>
           <motion.p 
-            className="text-xl text-gray-300 max-w-3xl mx-auto text-center"
+            className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto text-center px-2 sm:px-4 leading-relaxed"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
@@ -36,12 +36,12 @@ const ServicesPage = () => {
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="space-y-16">
+        <div className="space-y-12 sm:space-y-16">
           {services.map((service, index) => (
             <React.Fragment key={index}>
               <motion.div 
-                className={`flex flex-col md:flex-row gap-8 items-center ${
-                  index % 2 === 1 ? 'md:flex-row-reverse' : ''
+                className={`flex flex-col gap-6 sm:gap-8 items-center ${
+                  index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'
                 }`}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -51,48 +51,52 @@ const ServicesPage = () => {
                   <img 
                     src={service.image} 
                     alt={service.title}
-                    className="w-full h-96 object-cover rounded-lg shadow-lg"
+                    className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg shadow-lg"
                   />
                 </div>
-                <div className="w-full md:w-1/2 space-y-4">
-                  <h2 className="text-3xl font-bold text-gray-900">{service.title}</h2>
-                  <p className="text-xl text-gray-600">{service.description}</p>
-                  <ul className="space-y-2">
+                <div className="w-full md:w-1/2 space-y-3 sm:space-y-4">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center md:text-left">{service.title}</h2>
+                  <p className="text-lg sm:text-xl text-gray-600 text-center md:text-left leading-relaxed">{service.description}</p>
+                  <ul className="space-y-2 sm:space-y-3">
                     {service.details.map((detail, idx) => (
-                      <li key={idx} className="flex items-center text-gray-600">
-                        <span className="w-2 h-2 bg-green-600 rounded-full mr-2"></span>
-                        {detail}
+                      <li key={idx} className="flex items-start text-gray-600 text-sm sm:text-base">
+                        <span className="w-2 h-2 bg-green-600 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                        <span className="leading-relaxed">{detail}</span>
                       </li>
                     ))}
                   </ul>
-                  <Link 
-                    to={`/contatti?servizio=${encodeURIComponent(service.title)}#form`} 
-                    className="inline-block mt-4 bg-green-600 text-white px-6 py-3 rounded-md hover:bg-green-700"
-                  >
-                    Richiedi Preventivo
-                  </Link>
+                  <div className="pt-2 text-center md:text-left">
+                    <Link 
+                      to={`/contatti?servizio=${encodeURIComponent(service.title)}#form`} 
+                      className="inline-block bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-green-700 transition-colors text-sm sm:text-base font-medium"
+                    >
+                      Richiedi Preventivo
+                    </Link>
+                  </div>
                 </div>
               </motion.div>
-              <div className="w-full border-t border-gray-300 mt-8"></div>
+              {index < services.length - 1 && (
+                <div className="w-full border-t border-gray-300 mt-8 sm:mt-12"></div>
+              )}
             </React.Fragment>
           ))}
         </div>
 
         <motion.div 
-          className="mt-20 bg-gray-50 rounded-lg p-8 text-center mb-16"
+          className="mt-12 sm:mt-20 bg-gray-50 rounded-lg p-6 sm:p-8 text-center mb-8 sm:mb-16"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+          <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
             Hai un progetto specifico in mente?
           </h3>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed px-2">
             Contattaci per una consulenza gratuita e un preventivo personalizzato.
           </p>
           <Link 
             to="/contatti" 
-            className="inline-block bg-green-600 text-white px-8 py-4 rounded-md hover:bg-green-700 mb-4"
+            className="inline-block bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md hover:bg-green-700 transition-colors text-sm sm:text-base font-medium"
           >
             Parliamo del tuo Progetto
           </Link>
