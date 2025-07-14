@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const AboutPage = () => {
   const projects = [
-    { id: 0, position: [45.4642, 9.1900] as [number, number], name: "Restauro Abbazia", description: "Realizzazione di interventi di restauro e consolidamento strutturale delle capriate lignee dell'Abbazia di San Miniato al Monte", imageUrl: "/assets/img/servizi.jpg" },
-    { id: 1, position: [41.9028, 12.4964] as [number, number], name: "Installazione Passerella Sospesa", description: 'La realizzazione di una passerella sospesa multidirezionale, progettata per garantire un accesso sicuro e pratico durante gli interventi di manutenzione e lavori sul cordolo est, in direzione Genova.', imageUrl: "/assets/img/progetti.jpg" },
+    { id: 0, position: [43.462862, 11.145787] as [number, number], name: "Hang Srl al lavoro sulla storica chiesa di Santa Maria Novella, Firenze", description: "Ponteggio temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze...", imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276368/abbazia_ljwxuq.webp" },
+    { id: 1, position: [45.768341120057016, 8.62964813417156] as [number, number], name: "Ponteggio sospeso per far risplendere il ponte di ferro a Sesto Calende (VA)", description: 'Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio per un intervento di manutenzione straordinaria...', imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende_vinqql.webp" },
     // ...other projects...
   ];
 
