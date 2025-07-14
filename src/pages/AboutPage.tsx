@@ -67,8 +67,8 @@ const AboutPage = () => {
             <Award className="h-10 w-10 sm:h-12 sm:w-12 text-green-600 mb-4 mx-auto" />
             <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center">Professionalità</h3>
             <p className="text-gray-600 text-sm sm:text-base text-center">
-              Team altamente qualificato e certificato per garantire 
-              installazioni sicure e a regola d'arte.
+              Un team di tecnici altamente qualificati e di personale altamente formato, in grado di garantire installazioni versatili, sicure, 
+              conformi alle normative vigenti e realizzate secondo i più elevati standard di qualità.
             </p>
           </motion.div>
           <motion.div 
@@ -81,8 +81,9 @@ const AboutPage = () => {
             <Shield className="h-10 w-10 sm:h-12 sm:w-12 text-green-600 mb-4 mx-auto" />
             <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center">Sicurezza</h3>
             <p className="text-gray-600 text-sm sm:text-base text-center">
-              Utilizziamo solo materiali certificati e seguiamo rigorosamente 
-              tutte le normative di sicurezza.
+              Adottiamo esclusivamente materiali certificati secondo le normative europee di 
+              riferimento, selezionati per garantire massima resistenza, affidabilità e durata nel tempo, in 
+              collaborazione con i più noti marchi del settore
             </p>
           </motion.div>
           <motion.div 
@@ -95,8 +96,8 @@ const AboutPage = () => {
             <CheckCircle className="h-10 w-10 sm:h-12 sm:w-12 text-green-600 mb-4 mx-auto" />
             <h3 className="text-lg sm:text-xl font-semibold mb-4 text-center">Affidabilità</h3>
             <p className="text-gray-600 text-sm sm:text-base text-center">
-              Rispettiamo sempre le tempistiche e gli impegni presi, 
-              garantendo un servizio impeccabile.
+              Rispettiamo scrupolosamente le tempistiche concordate e gli impegni assunti, 
+              assicurando un servizio puntuale, efficiente e di elevata qualità in ogni fase del progetto, dalla fase preventiva fino a quella esecutiva.
             </p>
           </motion.div>
         </div>
