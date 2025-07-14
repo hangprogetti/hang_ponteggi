@@ -132,7 +132,24 @@ const ProjectDetailPage = () => {
             </video>
           </motion.div>
 
-          {/* New Section */}
+          {/* Galleria immagini */}
+          <motion.div 
+            ref={refGallery}
+            className="mb-6 sm:mb-8"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={inViewGallery ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 1 }}
+          >
+            <Slider {...settings}>
+              {project.images.map((image, index) => (
+                <div key={index} className="px-2 sm:px-4">
+                  <img src={image} alt={`Project image ${index + 1}`} className="w-full h-64 sm:h-96 md:h-[42rem] object-cover rounded-lg" />
+                </div>
+              ))}
+            </Slider>
+          </motion.div>
+
+          {/* Sezione Social */}
           <motion.div 
             ref={refDetails}
             className="bg-gray-100 py-8 sm:py-12 mb-8 sm:mb-16 rounded-lg"
@@ -179,23 +196,6 @@ const ProjectDetailPage = () => {
                 </a>
               </div>
             </div>
-          </motion.div>
-
-          {/* Galleria immagini */}
-          <motion.div 
-            ref={refGallery}
-            className="mb-6 sm:mb-8"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={inViewGallery ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 1 }}
-          >
-            <Slider {...settings}>
-              {project.images.map((image, index) => (
-                <div key={index} className="px-2 sm:px-4">
-                  <img src={image} alt={`Project image ${index + 1}`} className="w-full h-64 sm:h-96 md:h-[42rem] object-cover rounded-lg" />
-                </div>
-              ))}
-            </Slider>
           </motion.div>
         </motion.div>
       </div>
