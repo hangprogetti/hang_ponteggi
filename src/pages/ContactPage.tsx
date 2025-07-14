@@ -39,7 +39,7 @@ const ContactPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    emailjs.send('service_9r3nahq', 'template_vajt9qo', formData, 'OTQNdy3Waw99sviQb')
+    emailjs.send('service_zq67hy3', 'template_q9febpb', formData, 'vBMXCnedQCMzRTDcl')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         setFormStatus('success');
