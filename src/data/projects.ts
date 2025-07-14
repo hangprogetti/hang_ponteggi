@@ -22,24 +22,19 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
   },
   {
     video: "/assets/video/ponte_genova.mp4",
-    title: "Installazione Passerella Sospesa Multidirezionale",
-    projectImage: "/assets/img/genova.jpg",
-    shortDescription: `La realizzazione di una passerella sospesa multidirezionale, progettata per garantire un accesso sicuro e pratico durante gli interventi 
-      di manutenzione e lavori sul cordolo est, in direzione...`,
-    description: `La realizzazione di una passerella sospesa multidirezionale, progettata per garantire un accesso sicuro e pratico durante gli interventi 
-    di manutenzione e lavori sul cordolo est, in direzione Genova. La passerella sarà dotata di una struttura robusta, che permette il 
-    passaggio agevole in diverse direzioni, offrendo una flessibilità operativa ottimale per il personale coinvolto. Inoltre, 
-    è prevista l'integrazione di una torre scala, che servirà come supporto per accedere in modo sicuro alle aree di lavoro più alte 
-    e difficili da raggiungere. L'intero sistema sarà progettato tenendo conto delle normative di sicurezza vigenti, per garantire 
-    l'incolumità degli operatori e l'efficienza nell'esecuzione delle operazioni.`,
+    title: "Ponte di Doccio, Valsesia",
+    projectImage: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513207/ponte_doccio_xx6uiy.webp",
+    shortDescription: `Hang ha realizzato una struttura che permette di lavorare su tutto il ponte, in condizioni di massima sicurezza ed affidabilità...`,
+    description: `Hang ha realizzato una struttura che permette di lavorare su tutto il ponte, in condizioni di massima sicurezza ed affidabilità. Impalcato sospeso, pile, interno ed esterno dell’arco. Praticamente, un cantiere aereo.`,
     images: [
-      "/assets/img/genova1.jpg",
-      "/assets/img/genova2.jpg",
-      "/assets/img/genova3.jpg",
-      "/assets/img/genova4.jpg"
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513767/ponte_doccio1_l04bwc.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513767/ponte_doccio2_aybfgu.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513767/ponte_doccio3_laud3b.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513767/ponte_doccio4_ixzabu.webp",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513768/ponte_doccio5_ec52a8.webp"
     ],
     details: {
-      dove: "Genova",
+      dove: "Valsesia",
       durata: "6 mesi",
       intervento: "Installazione ponteggi",
       area: "1800 m²"

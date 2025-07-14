@@ -10,7 +10,7 @@ const AboutPage = () => {
   const projects = [
     { id: 0, position: [43.462862, 11.145787] as [number, number], name: "Hang Srl al lavoro sulla storica chiesa di Santa Maria Novella, Firenze", description: "Ponteggio temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze...", imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276368/abbazia_ljwxuq.webp" },
     { id: 1, position: [45.768341120057016, 8.62964813417156] as [number, number], name: "Ponteggio sospeso per far risplendere il ponte di ferro a Sesto Calende (VA)", description: 'Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio per un intervento di manutenzione straordinaria...', imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende_vinqql.webp" },
-    // ...other projects...
+    { id: 1, position: [45.76728636116304, 8.259302293075178] as [number, number], name: "Ponte di Doccio, Valsesia", description: 'Hang ha realizzato una struttura che permette di lavorare su tutto il ponte, in condizioni di massima sicurezza ed affidabilità...', imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513207/ponte_doccio_xx6uiy.webp" },
   ];
 
   const greenIcon = new L.Icon({
