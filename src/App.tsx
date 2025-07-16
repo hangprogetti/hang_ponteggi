@@ -8,6 +8,8 @@ import ServicesPage from './pages/ServicesPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
+import PrivacyPage from './pages/PrivacyPage';
+import CookiePage from './pages/CookiePage';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/contatti" element={<ContactPage />} />
             <Route path="/progetto/:id" element={<ProjectDetailPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/cookies" element={<CookiePage />} />
           </Routes>
         </main>
         <Footer />

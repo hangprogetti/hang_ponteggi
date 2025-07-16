@@ -105,9 +105,12 @@ const Footer = () => {
               © 2024 HANG Ponteggi. Tutti i diritti riservati.
             </p>
             <div className="mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-white mx-2">Privacy</a>
-              <a href="#" className="text-gray-400 hover:text-white mx-2">Termini</a>
-              <a href="#" className="text-gray-400 hover:text-white mx-2">Cookie</a>
+              <Link to="/privacy" className="text-gray-400 hover:text-white mx-2" onClick={scrollToTop}>
+                Privacy
+              </Link>
+              <Link to="/cookies" className="text-gray-400 hover:text-white mx-2" onClick={scrollToTop}>
+                Cookie
+              </Link>
             </div>
           </div>
         </div>

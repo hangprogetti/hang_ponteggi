@@ -12,10 +12,28 @@ declare global {
 
 const PrivacyPage = () => {
   useEffect(() => {
-    // Assicuriamoci che lo script Iubenda sia caricato
-    if (window.iubenda) {
-      window.iubenda.parse();
-    }
+    // Funzione per caricare e inizializzare Iubenda
+    const loadIubenda = () => {
+      // Se lo script non è già caricato, lo carichiamo
+      if (!document.querySelector('script[src*="iubenda.js"]')) {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.iubenda.com/iubenda.js';
+        script.async = true;
+        script.onload = () => {
+          if (window.iubenda) {
+            setTimeout(() => window.iubenda?.parse(), 100);
+          }
+        };
+        document.head.appendChild(script);
+      } else {
+        // Se lo script è già caricato, esegui il parse
+        if (window.iubenda) {
+          setTimeout(() => window.iubenda?.parse(), 100);
+        }
+      }
+    };
+
+    loadIubenda();
   }, []);
 
   return (
@@ -57,11 +75,13 @@ const PrivacyPage = () => {
         >
           <div className="text-center mb-8">
             <a 
-              href="https://www.iubenda.com/privacy-policy/61234114" 
+              href="https://www.iubenda.com/privacy-policy/87924712" 
               className="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium" 
               title="Privacy Policy"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Visualizza Privacy Policy Completa
+              Privacy Policy
             </a>
           </div>
           
