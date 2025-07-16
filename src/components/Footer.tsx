@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Facebook, Instagram, Linkedin} from 'lucide-react';
-import CookiePreferencesButton from './CookiePreferencesButton';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -112,7 +111,6 @@ const Footer = () => {
               <Link to="/cookie" className="text-gray-400 hover:text-white mx-2" onClick={scrollToTop}>
                 Cookie Policy
               </Link>
-              <CookiePreferencesButton className="text-gray-400 hover:text-white mx-2" />
             </div>
           </div>
         </div>
