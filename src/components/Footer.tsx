@@ -105,12 +105,22 @@ const Footer = () => {
               © 2024 HANG Ponteggi. Tutti i diritti riservati.
             </p>
             <div className="mt-4 md:mt-0">
-              <Link to="/privacy" className="text-gray-400 hover:text-white mx-2" onClick={scrollToTop}>
-                Privacy
-              </Link>
-              <Link to="/cookies" className="text-gray-400 hover:text-white mx-2" onClick={scrollToTop}>
-                Cookie
-              </Link>
+              <a 
+                href="https://www.iubenda.com/privacy-policy/87924712" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white mx-2"
+              >
+                Privacy Policy
+              </a>
+              <a 
+                href="https://www.iubenda.com/privacy-policy/87924712/cookie-policy" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white mx-2"
+              >
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -8,13 +7,13 @@ import ServicesPage from './pages/ServicesPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 import ProjectDetailPage from './pages/ProjectDetailPage';
-import PrivacyPage from './pages/PrivacyPage';
-import CookiePage from './pages/CookiePage';
+import IubendaCookieBanner from './components/IubendaCookieBanner';
 
 function App() {
   return (
     <Router>
       <div className="min-h-screen bg-white flex flex-col">
+        <IubendaCookieBanner />
         <Navbar />
         <main className="flex-grow">
           <Routes>
@@ -24,8 +23,6 @@ function App() {
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/contatti" element={<ContactPage />} />
             <Route path="/progetto/:id" element={<ProjectDetailPage />} />
-            <Route path="/privacy" element={<PrivacyPage />} />
-            <Route path="/cookies" element={<CookiePage />} />
           </Routes>
         </main>
         <Footer />
