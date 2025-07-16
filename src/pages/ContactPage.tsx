@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import emailjs from 'emailjs-com'; // Add this import
 
 const ContactPage = () => {
@@ -14,12 +14,17 @@ const ContactPage = () => {
     phone: '',
     message: '',
     service: '', // Add this field
+    privacy: false, // Add privacy checkbox
   });
   const [formStatus, setFormStatus] = useState<null | 'success' | 'error'>(null);
   const [isLoading, setIsLoading] = useState(false); 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => { 
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    const { name, value, type } = e.target;
+    const checked = (e.target as HTMLInputElement).checked;
+    setFormData(prev => ({ 
+      ...prev, 
+      [name]: type === 'checkbox' ? checked : value 
+    }));
   };
 
   useEffect(() => {
@@ -49,6 +54,7 @@ const ContactPage = () => {
           phone: '',
           message: '',
           service: '', // Reset this field
+          privacy: false, // Reset privacy checkbox
         });
         setIsLoading(false);
       }, (error) => {
@@ -185,6 +191,38 @@ const ContactPage = () => {
                   className="w-full px-3 sm:px-4 py-2 sm:py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm sm:text-base resize-none"
                   placeholder="Scrivi un messaggio"
                 ></textarea>
+              </div>
+              <div className="flex items-start">
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="privacy"
+                  checked={formData.privacy}
+                  onChange={handleChange}
+                  required
+                  className="mt-1 mr-3"
+                />
+                <label htmlFor="privacy" className="text-sm text-gray-600">
+                  Accetto la{' '}
+                  <Link 
+                    to="/privacy" 
+                    className="text-blue-600 hover:text-blue-800 underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Privacy Policy
+                  </Link>
+                  {' '}e la{' '}
+                  <Link 
+                    to="/cookie" 
+                    className="text-blue-600 hover:text-blue-800 underline"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Cookie Policy
+                  </Link>
+                  {' '}e acconsento al trattamento dei miei dati personali.
+                </label>
               </div>
               <button 
               type="submit"
