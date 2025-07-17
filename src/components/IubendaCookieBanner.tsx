@@ -77,8 +77,8 @@ const IubendaCookieBanner: React.FC = () => {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center bg-black bg-opacity-50 overflow-y-auto">
-      <div className="relative bg-black text-white p-4 sm:p-6 rounded-lg max-w-md mx-4 my-4 sm:my-0 shadow-2xl w-full sm:w-auto max-h-screen overflow-y-auto">
+    <div className="fixed inset-0 z-50 bg-black bg-opacity-50 flex items-center justify-center p-4">
+      <div className="relative bg-black text-white p-3 sm:p-6 rounded-lg max-w-md w-full sm:w-auto shadow-2xl max-h-[90vh] overflow-y-auto">
         {/* Close button */}
         <button
           onClick={handleClose}
@@ -87,40 +87,25 @@ const IubendaCookieBanner: React.FC = () => {
           ×
         </button>
 
-        <div className="mb-4 sm:mb-6 pr-8">
-          <p className="text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-            Noi (<strong>www.hangpontgeggi.it</strong>) e terze parti selezionate (2) 
-            raccogliamo informazioni personali come specificato nella{' '}
+        <div className="mb-3 sm:mb-6 pr-6 sm:pr-8">
+          <p className="text-xs sm:text-sm leading-tight sm:leading-relaxed mb-2 sm:mb-4">
+            Noi (<strong>www.hangpontgeggi.it</strong>) raccogliamo informazioni come specificato nella{' '}
             <button 
               onClick={handleLearnMore}
               className="text-blue-400 underline hover:text-blue-300"
             >
               privacy policy
             </button>
-            {' '}e utilizziamo cookie o tecnologie simili per 
-            finalità tecniche e, con il tuo consenso, anche per le finalità di 
-            esperienza come specificato nella{' '}
-            <button 
-              onClick={handleLearnMore}
-              className="text-blue-400 underline hover:text-blue-300"
-            >
-              cookie policy
-            </button>.
+            {' '}e utilizziamo cookie per finalità tecniche e di esperienza.
           </p>
           
-          <p className="text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
-            Puoi liberamente prestare, rifiutare o revocare il tuo consenso, 
-            in qualsiasi momento, accedendo al pannello delle preferenze. 
-            Il rifiuto del consenso può rendere non disponibili le relative funzioni.
-          </p>
-          
-          <p className="text-xs sm:text-sm leading-relaxed mb-3 sm:mb-6">
-            Usa il pulsante "Accetta tutto" per acconsentire. Usa il pulsante 
-            "Rifiuta tutto" o chiudi questa informativa per continuare senza accettare.
+          <p className="text-xs sm:text-sm leading-tight sm:leading-relaxed mb-2 sm:mb-6 hidden sm:block">
+            Puoi prestare, rifiutare o revocare il consenso accedendo al pannello preferenze.
+            Usa "Accetta tutto" per acconsentire o "Rifiuta tutto" per continuare senza accettare.
           </p>
 
-          {/* Experience toggle */}
-          <div className="flex items-center mb-4 sm:mb-6">
+          {/* Experience toggle - solo su desktop */}
+          <div className="hidden sm:flex items-center mb-4 sm:mb-6">
             <button
               onClick={() => setExperienceEnabled(!experienceEnabled)}
               className={`relative inline-flex items-center h-6 w-11 rounded-full transition-colors focus:outline-none ${
@@ -173,8 +158,7 @@ const IubendaCookieBanner: React.FC = () => {
               iubenda
             </button>
           </span>
-        </div>
-      </div>
+        </div>        </div>
     </div>
   );
 };
