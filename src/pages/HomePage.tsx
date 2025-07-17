@@ -2,20 +2,72 @@ import { ChevronRight, Shield, CheckCircle, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { services } from '../data/services'; // Importa i servizi
+import { useEffect, useRef, useState } from 'react';
 
 const HomePage = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isIOS, setIsIOS] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
+  useEffect(() => {
+    // Detect iOS devices
+    const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+    setIsIOS(iOS);
+
+    // Force video play on iOS after user interaction
+    const handleVideoLoad = () => {
+      setVideoLoaded(true);
+      if (videoRef.current) {
+        videoRef.current.play().catch(() => {
+          // If autoplay fails, we'll show the fallback image
+          console.log('Video autoplay failed, using fallback');
+        });
+      }
+    };
+
+    const video = videoRef.current;
+    if (video) {
+      video.addEventListener('loadeddata', handleVideoLoad);
+      video.addEventListener('canplaythrough', handleVideoLoad);
+      
+      return () => {
+        video.removeEventListener('loadeddata', handleVideoLoad);
+        video.removeEventListener('canplaythrough', handleVideoLoad);
+      };
+    }
+  }, []);
+
   return (
     <>
       <section className="relative min-h-screen h-screen">
         <div className="absolute inset-0 overflow-hidden">
+          {/* Video element with iOS optimizations */}
           <video 
+            ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover"
             src="/assets/video/video_hero.mp4"
             autoPlay
             loop
             muted
             playsInline
+            preload="metadata"
+            webkit-playsinline="true"
+            x5-playsinline="true"
+            controls={false}
+            disablePictureInPicture
+            onLoadStart={() => setVideoLoaded(false)}
+            onCanPlay={() => setVideoLoaded(true)}
+            style={{ pointerEvents: 'none' }}
           />
+          
+          {/* Fallback image for iOS if video doesn't load */}
+          {isIOS && !videoLoaded && (
+            <div 
+              className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: 'url(/assets/img/hero.jpg)' }}
+            />
+          )}
+          
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
         
