@@ -77,18 +77,18 @@ const IubendaCookieBanner: React.FC = () => {
   }
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-      <div className="relative bg-black text-white p-6 rounded-lg max-w-md mx-4 shadow-2xl">
+    <div className="fixed inset-0 z-50 flex items-start sm:items-center justify-center bg-black bg-opacity-50 overflow-y-auto">
+      <div className="relative bg-black text-white p-4 sm:p-6 rounded-lg max-w-md mx-4 my-4 sm:my-0 shadow-2xl w-full sm:w-auto max-h-screen overflow-y-auto">
         {/* Close button */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-white hover:text-gray-300 text-xl font-bold"
+          className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white hover:text-gray-300 text-xl font-bold z-10"
         >
           ×
         </button>
 
-        <div className="mb-6">
-          <p className="text-sm leading-relaxed mb-4">
+        <div className="mb-4 sm:mb-6 pr-8">
+          <p className="text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
             Noi (<strong>www.hangpontgeggi.it</strong>) e terze parti selezionate (2) 
             raccogliamo informazioni personali come specificato nella{' '}
             <button 
@@ -108,19 +108,19 @@ const IubendaCookieBanner: React.FC = () => {
             </button>.
           </p>
           
-          <p className="text-sm leading-relaxed mb-4">
+          <p className="text-xs sm:text-sm leading-relaxed mb-3 sm:mb-4">
             Puoi liberamente prestare, rifiutare o revocare il tuo consenso, 
             in qualsiasi momento, accedendo al pannello delle preferenze. 
             Il rifiuto del consenso può rendere non disponibili le relative funzioni.
           </p>
           
-          <p className="text-sm leading-relaxed mb-6">
+          <p className="text-xs sm:text-sm leading-relaxed mb-3 sm:mb-6">
             Usa il pulsante "Accetta tutto" per acconsentire. Usa il pulsante 
             "Rifiuta tutto" o chiudi questa informativa per continuare senza accettare.
           </p>
 
           {/* Experience toggle */}
-          <div className="flex items-center mb-6">
+          <div className="flex items-center mb-4 sm:mb-6">
             <button
               onClick={() => setExperienceEnabled(!experienceEnabled)}
               className={`relative inline-flex items-center h-6 w-11 rounded-full transition-colors focus:outline-none ${
@@ -133,22 +133,22 @@ const IubendaCookieBanner: React.FC = () => {
                 }`}
               />
             </button>
-            <span className="ml-3 text-sm">Esperienza</span>
+            <span className="ml-3 text-xs sm:text-sm">Esperienza</span>
           </div>
         </div>
 
         {/* Buttons */}
-        <div className="space-y-3">
-          <div className="flex space-x-3">
+        <div className="space-y-2 sm:space-y-3">
+          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3">
             <button
               onClick={handleRejectAll}
-              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition-colors"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 sm:py-3 px-3 sm:px-4 rounded-lg font-medium transition-colors text-sm sm:text-base"
             >
               Rifiuta tutto
             </button>
             <button
               onClick={handleAcceptAll}
-              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition-colors"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 sm:py-3 px-3 sm:px-4 rounded-lg font-medium transition-colors text-sm sm:text-base"
             >
               Accetta tutto
             </button>
@@ -156,14 +156,14 @@ const IubendaCookieBanner: React.FC = () => {
           
           <button
             onClick={handleLearnMore}
-            className="w-full bg-gray-600 hover:bg-gray-700 text-white py-3 px-4 rounded-lg font-medium transition-colors"
+            className="w-full bg-gray-600 hover:bg-gray-700 text-white py-2 sm:py-3 px-3 sm:px-4 rounded-lg font-medium transition-colors text-sm sm:text-base"
           >
             Scopri di più
           </button>
         </div>
 
         {/* Iubenda branding */}
-        <div className="mt-4 text-center">
+        <div className="mt-3 sm:mt-4 text-center">
           <span className="text-xs text-gray-400">
             Created with{' '}
             <button 
