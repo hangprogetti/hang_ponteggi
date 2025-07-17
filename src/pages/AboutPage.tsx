@@ -48,7 +48,7 @@ const AboutPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Da oltre due decenni, HANG Ponteggi è il punto di riferimento per 
+            Da oltre due decenni nel settore, oggi HANG Ponteggi rappresenta il punto di riferimento per 
             l'installazione e il noleggio di ponteggi in tutta Italia. La nostra 
             storia è fatta di progetti sfidanti, soluzioni innovative e un impegno 
             costante per la sicurezza.

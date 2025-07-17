@@ -15,7 +15,7 @@ const Footer = () => {
               <img src="/assets/img/logo3.png" alt="HANG Logo" className="h-30 w-32" />
             </div>
             <p className="text-gray-400">
-              Leader nel settore dei ponteggi con oltre 20 anni di esperienza. 
+              Leader nel settore dei ponteggi con oltre 20 anni di esperienza pregressa. 
               Sicurezza e qualità al primo posto.
             </p>
             <div className="mt-8">
