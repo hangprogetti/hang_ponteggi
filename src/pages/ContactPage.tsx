@@ -294,20 +294,6 @@ const ContactPage = () => {
                 </div>
               </div>
             </div>
-
-            <div className="bg-blue-50 p-4 sm:p-6 lg:p-8 rounded-lg">
-              <h3 className="text-lg sm:text-xl font-semibold mb-3 sm:mb-4">Emergenze 24/7</h3>
-              <p className="text-gray-600 mb-3 sm:mb-4 text-sm sm:text-base">
-                Per emergenze fuori orario, è disponibile il nostro servizio di 
-                assistenza 24/7.
-              </p>
-              <a 
-                href="tel:+390287186660" 
-                className="text-base sm:text-lg font-semibold text-green-600 hover:text-green-700 transition-colors"
-              >
-                +39 02 871 8660
-              </a>
-            </div>
           </motion.div>
         </div>
 
