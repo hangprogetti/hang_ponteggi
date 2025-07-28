@@ -29,7 +29,7 @@ const PortfolioPage = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             Scopri una selezione dei nostri interventi più rappresentativi.
-            Ogni progetto riflette la nostra competenza, l’attenzione alla sicurezza e l’impegno costante per l’eccellenza nel settore dei ponteggi.
+            Ogni progetto riflette la nostra competenza, l’attenzione alla sicurezza e l’impegno costante per l’eccellenza nel settore dei ponteggi sospesi.
           </motion.p>
         </div>
       </div>

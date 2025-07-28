@@ -88,7 +88,7 @@ const ContactPage = () => {
           >
             Siamo qui per rispondere a tutte le tue domande. Contattaci per un 
             preventivo gratuito o per maggiori informazioni sui nostri servizi 
-            di ponteggi.
+            di ponteggi sospesi.
           </motion.p>
         </div>
       </div>

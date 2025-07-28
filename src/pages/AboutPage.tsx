@@ -8,8 +8,8 @@ import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const AboutPage = () => {
   const projects = [
-    { id: 0, position: [43.462862, 11.145787] as [number, number], name: "Hang Srl al lavoro sulla storica chiesa di Santa Maria Novella, Firenze", description: "Ponteggio temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze...", imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276368/abbazia_ljwxuq.webp" },
-    { id: 1, position: [45.768341120057016, 8.62964813417156] as [number, number], name: "Ponteggio sospeso per far risplendere il ponte di ferro a Sesto Calende (VA)", description: 'Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio per un intervento di manutenzione straordinaria...', imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende_vinqql.webp" },
+    { id: 0, position: [43.462862, 11.145787] as [number, number], name: "Hang Srl al lavoro sulla storica chiesa di Santa Maria Novella, Firenze", description: "Ponteggio sospeso temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze...", imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276368/abbazia_ljwxuq.webp" },
+    { id: 1, position: [45.768341120057016, 8.62964813417156] as [number, number], name: "Ponteggio sospeso per far risplendere il ponte di ferro a Sesto Calende (VA)", description: 'Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio sospeso per un intervento di manutenzione straordinaria...', imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende_vinqql.webp" },
     { id: 1, position: [45.76728636116304, 8.259302293075178] as [number, number], name: "Ponte di Doccio, Valsesia", description: 'Hang ha realizzato una struttura che permette di lavorare su tutto il ponte, in condizioni di massima sicurezza ed affidabilità...', imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513207/ponte_doccio_xx6uiy.webp" },
   ];
 
@@ -49,7 +49,7 @@ const AboutPage = () => {
             transition={{ duration: 1, delay: 0.5 }}
           >
             Da oltre due decenni nel settore, oggi HANG Ponteggi rappresenta il punto di riferimento per 
-            l'installazione e il noleggio di ponteggi in tutta Italia. La nostra 
+            l'installazione e il noleggio di ponteggi sospesi in tutta Italia. La nostra 
             storia è fatta di progetti sfidanti, soluzioni innovative e un impegno 
             costante per la sicurezza.
           </motion.p>
@@ -107,7 +107,7 @@ const AboutPage = () => {
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">La Nostra Storia</h2>
             <p className="text-gray-600 mb-4">
               Fondata nel 2022, HANG Ponteggi nasce dall’unione tra una profonda passione per il settore dell’edilizia e l’ambizione di offrire 
-              soluzioni di ponteggio altamente specializzate, sicure e tecnologicamente avanzate.
+              soluzioni di ponteggi sospesi altamente specializzate, sicure e tecnologicamente avanzate.
             </p>
             <p className="text-gray-600 mb-4">
               Fin dall’inizio, l’azienda ha posto al centro del proprio sviluppo l’innovazione e la crescita professionale, investendo 
@@ -120,7 +120,7 @@ const AboutPage = () => {
               su tutto il territorio nazionale.
             </p>
             <p className="text-gray-600 mb-4">
-             La nostra missione è chiara e immutata: offrire soluzioni di ponteggio che garantiscano i più elevati standard di sicurezza, 
+             La nostra missione è chiara e immutata: offrire soluzioni di ponteggi sospesi che garantiscano i più elevati standard di sicurezza, 
              qualità esecutiva e professionalità, indipendentemente dalla dimensione o dalla complessità dell’intervento.
             </p>
           </div>

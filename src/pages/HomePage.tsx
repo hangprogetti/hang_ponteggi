@@ -79,7 +79,7 @@ const HomePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
             >
-              Ponteggi sicuri e certificati per ogni esigenza edilizia
+              Ponteggi sospesi sicuri e certificati per ogni esigenza edilizia
             </motion.h1>
             <motion.p 
               className="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-5xl leading-relaxed"
@@ -87,7 +87,7 @@ const HomePage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              Siamo un'azienda italiana giovane, dinamica e in continua espansione, specializzata nella fornitura, noleggio e installazione di ponteggio, coperture provvisorie e montacarichi da cantiere in tutta la penisola italiana.
+              Siamo un'azienda italiana giovane, dinamica e in continua espansione, specializzata nella fornitura, noleggio e installazione di ponteggi sospesi, coperture provvisorie e montacarichi da cantiere in tutta la penisola italiana.
               <br className="hidden sm:block" />
               <span className="block mt-2 sm:inline sm:mt-0">
                 Operiamo con competenza e flessibilità in ambito infrastrutturale, civile e industriale offrendo soluzioni personalizzate e tecnologicamente avanzate per soddisfare le esigenze di sicurezza, efficienza e rapidità di ogni progetto.
@@ -134,7 +134,7 @@ const HomePage = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              Da anni, <span className="text-green-600 font-bold">HANG</span> Ponteggi rappresenta un punto di riferimento a livello nazionale nel settore dell'installazione e del noleggio di ponteggi.
+              Da anni, <span className="text-green-600 font-bold">HANG</span> Ponteggi rappresenta un punto di riferimento a livello nazionale nel settore dell'installazione e del noleggio di ponteggi sospesi.
               <br className="hidden sm:block" />
               <span className="block mt-2 sm:inline sm:mt-0">
                 La nostra esperienza pluriennale si fonda su un percorso di crescita costante, caratterizzato da progetti complessi, soluzioni tecnologicamente avanzate e un'attenzione rigorosa agli standard di sicurezza.

@@ -36,7 +36,7 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
     details: {
       dove: "Valsesia",
       durata: "6 mesi",
-      intervento: "Installazione ponteggi",
+      intervento: "Installazione ponteggi sospesi",
       area: "1800 m²"
     }
   },
@@ -44,8 +44,8 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
     video: "/assets/video/ponte.mp4",
     title: "Ponteggio sospeso per far risplendere il ponte di ferro a Sesto Calende (VA)",
     projectImage: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende_vinqql.webp",
-    shortDescription: `Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio per un intervento di manutenzione straordinaria...`,
-    description: "Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio per un intervento di manutenzione straordinaria sulla travata metallica. Un lavoro cruciale per mantenere saldo il collegamento tra Piemonte e Lombardia.",
+    shortDescription: `Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio sospeso per un intervento di manutenzione straordinaria...`,
+    description: "Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio sospeso per un intervento di manutenzione straordinaria sulla travata metallica. Un lavoro cruciale per mantenere saldo il collegamento tra Piemonte e Lombardia.",
     images: [
       "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277488/ponte_calende1_zhdtit.webp",
       "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277489/ponte_calende2_uzpbfi.webp",

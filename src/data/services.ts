@@ -4,6 +4,7 @@ export const services = [
     description: "Offriamo un'ampia selezione di ponteggi per soddisfare ogni esigenza di cantiere: soluzioni multidirezionali, a telaio ed elettriche. Sicurezza, versatilità e personalizzazione al tuo servizio.",
     image: "/assets/img/noleggio.jpg",
     details: [
+      "Ponteggi sospesi",
       "Ponteggi multidirezionali",
       "Ponteggi a telaio",
       "Ponteggi elettrici",
