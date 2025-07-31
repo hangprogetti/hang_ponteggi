@@ -10,4 +10,11 @@ export default defineConfig({
   server: {
     allowedHosts: ['7c03-130-25-211-36.ngrok-free.app'],
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 });

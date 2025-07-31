@@ -5,14 +5,9 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import './AboutPage.css'; // Import the CSS file
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { mapProjects } from '../data/projects';
 
 const AboutPage = () => {
-  const projects = [
-    { id: 0, position: [43.462862, 11.145787] as [number, number], name: "Hang Srl al lavoro sulla storica chiesa di Santa Maria Novella, Firenze", description: "Ponteggio sospeso temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze...", imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276368/abbazia_ljwxuq.webp" },
-    { id: 1, position: [45.768341120057016, 8.62964813417156] as [number, number], name: "Ponteggio sospeso per far risplendere il ponte di ferro a Sesto Calende (VA)", description: 'Sotto l’impalcato e sui fianchi, Hang ha provveduto all’installazione di un ponteggio sospeso per un intervento di manutenzione straordinaria...', imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752277486/ponte_calende_vinqql.webp" },
-    { id: 1, position: [45.76728636116304, 8.259302293075178] as [number, number], name: "Ponte di Doccio, Valsesia", description: 'Hang ha realizzato una struttura che permette di lavorare su tutto il ponte, in condizioni di massima sicurezza ed affidabilità...', imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513207/ponte_doccio_xx6uiy.webp" },
-  ];
-
   const greenIcon = new L.Icon({
     iconUrl: '/assets/img/location.png', // Updated icon URL
     iconSize: [31, 31],
@@ -134,18 +129,21 @@ const AboutPage = () => {
         </div>
         <div className="w-full border-t border-gray-300 mt-6 sm:mt-8 mb-6 sm:mb-8"></div>
         {/* Mappa dei progetti */}
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 text-center">I Nostri Lavori In Tutta Italia</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 text-center">Alcuni dei Nostri Lavori In Tutta Italia</h2>
         <div className="h-[300px] sm:h-[400px] md:h-[500px] w-full mb-8 sm:mb-16 mt-6 sm:mt-8 relative z-0"> {/* Increased height to 500px */}
-          <MapContainer center={[42.5, 12.5]} zoom={6} className="h-full w-full rounded-lg shadow-lg leaflet-container">
+          <MapContainer center={[44.5, 11.5]} zoom={7} className="h-full w-full rounded-lg shadow-lg leaflet-container">
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            {projects.map(project => (
+            {mapProjects.map(project => (
               <Marker key={project.id} position={project.position} icon={greenIcon}>
                 <Popup>
                   <h3 className="font-bold text-xs sm:text-sm">{project.name}</h3>
-                  <p className="text-xs mt-1">{project.description} 
-                    <Link to={`/progetto/${project.id}`} className="link-green-600 ml-1">Scopri</Link>
+                  <p className="text-xs mt-1">
+                    {project.description}
+                    {project.showDiscoverLink && (
+                      <Link to={`/progetto/${project.id}`} className="link-green-600 ml-1">Scopri</Link>
+                    )}
                   </p>
                   <img src={project.imageUrl} alt={project.name} className="w-full h-20 sm:h-28 mt-2 rounded object-cover" />
                 </Popup>
