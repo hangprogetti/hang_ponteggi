@@ -17,4 +17,9 @@ export default defineConfig({
       },
     },
   },
+  // Ensure proper SPA routing for preview
+  preview: {
+    port: 4173,
+    host: true,
+  },
 });

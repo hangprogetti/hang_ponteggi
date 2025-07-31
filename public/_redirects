@@ -1,1 +1,12 @@
+# Handle client-side routing fallback
 /*    /index.html   200
+
+# Specific routes (optional - for better caching and SEO)
+/chi-siamo    /index.html   200
+/servizi      /index.html   200
+/portfolio    /index.html   200
+/contatti     /index.html   200
+/progetto/*   /index.html   200
+
+# Handle 404 errors
+/404          /index.html   200
