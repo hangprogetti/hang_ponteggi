@@ -6,8 +6,20 @@ import L from 'leaflet';
 import './AboutPage.css'; // Import the CSS file
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import { mapProjects } from '../data/projects';
+import { useState, useEffect } from 'react';
 
 const AboutPage = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const greenIcon = new L.Icon({
     iconUrl: '/assets/img/location.png', // Updated icon URL
     iconSize: [31, 31],
@@ -131,7 +143,11 @@ const AboutPage = () => {
         {/* Mappa dei progetti */}
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1 text-center">Alcuni dei Nostri Lavori In Tutta Italia</h2>
         <div className="h-[300px] sm:h-[400px] md:h-[500px] w-full mb-8 sm:mb-16 mt-6 sm:mt-8 relative z-0"> {/* Increased height to 500px */}
-          <MapContainer center={[44.5, 11.5]} zoom={6.5} className="h-full w-full rounded-lg shadow-lg leaflet-container">
+          <MapContainer 
+            center={[44.8, 9.8]} 
+            zoom={isMobile ? 5.8 : 6.5} 
+            className="h-full w-full rounded-lg shadow-lg leaflet-container"
+          >
             <TileLayer
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
