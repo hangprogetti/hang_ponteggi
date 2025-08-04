@@ -28,7 +28,7 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
     description: `Hang ha realizzato una struttura che permette di lavorare su tutto il ponte, in condizioni di massima sicurezza ed affidabilità. Impalcato sospeso, pile, interno ed esterno dell’arco. Praticamente, un cantiere aereo.`,
     images: [
       "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513767/ponte_doccio1_l04bwc.webp",
-      "https://res.cloudinary.com/dczzzutnf/image/upload/v1754313847/MALPENSA_10_LUGLIO_2025-20_knodcr.avif",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513767/ponte_doccio2_aybfgu.webp",
       "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513767/ponte_doccio3_laud3b.webp",
       "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513767/ponte_doccio4_ixzabu.webp",
       "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513768/ponte_doccio5_ec52a8.webp"
