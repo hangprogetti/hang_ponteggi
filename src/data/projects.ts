@@ -15,7 +15,7 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
     ],
     details: {
       dove: "Firenze",
-      durata: "3 mesi",
+      durata: "9 mesi",
       intervento: "Restauro storico",
       area: "2500 m²"
     }
@@ -35,7 +35,7 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
     ],
     details: {
       dove: "Valsesia",
-      durata: "6 mesi",
+      durata: "8 mesi",
       intervento: "Installazione ponteggi sospesi",
       area: "1800 m²"
     }
@@ -55,8 +55,8 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
     ],
     details: {
       dove: "Sesto Calende",
-      durata: "4 mesi",
-      intervento: "Manutenzione Straordinaria",
+      durata: "12 mesi",
+      intervento: "Installazione ponteggi sospesi",
       area: "3000 m²"
     }
   }
