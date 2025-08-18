@@ -161,7 +161,7 @@ const AboutPage = () => {
                       <Link to={`/progetto/${project.id}`} className="link-green-600 ml-1">Scopri</Link>
                     )}
                   </p>
-                  <img src={project.imageUrl} alt={project.name} className="w-full h-20 sm:h-28 mt-2 rounded object-cover" />
+                  <img src={project.imageUrl} alt={project.name} className="w-full h-20 sm:h-40 mt-2 rounded object-cover" />
                 </Popup>
               </Marker>
             ))}

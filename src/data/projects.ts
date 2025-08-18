@@ -1,17 +1,17 @@
 export const projects = [
   {
-    video: "/assets/video/abbazia.mp4",
+    video: "https://res.cloudinary.com/dczzzutnf/video/upload/v1755513266/Hang_-_Santa_Maria_Novella_Orizzontale_m9defy.mp4",
     title: "Hang Srl al lavoro sulla storica chiesa di Santa Maria Novella, Firenze",
-    projectImage: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276368/abbazia_ljwxuq.webp",
+    projectImage: "https://res.cloudinary.com/dczzzutnf/image/upload/v1755512688/SANTA_MARIA_NOVELLA_FIRENZE_SITO-8_iuuutt.avif",
     shortDescription: `Ponteggio temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze...`,
     description: `Ponteggio temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze e dell’arte rinascimentale. Grazie alla nostra esperienza e alle tecnologie all’avanguardia, Hang Srl ha realizzato una struttura sicura, robusta e rispettosa dell’ambiente circostante, permettendo ai restauratori di operare nel massimo rispetto del patrimonio artistico e architettonico.
 Un intervento pensato per valorizzare e preservare uno dei capolavori storici della città, confermando il nostro impegno nella tutela dei beni culturali.`,
     images: [
-      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276369/abbazia1_v2bpee.webp",
-      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276369/abbazia2_ltsbcc.webp",
-      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276369/abbazia3_km9sb5.webp",
-      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276377/abbazia4_caybqp.webp",
-      "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276676/abbazia5_fuxggu.webp"
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755512688/SANTA_MARIA_NOVELLA_FIRENZE_SITO-8_iuuutt.avif",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755512693/SANTA_MARIA_NOVELLA_FIRENZE_SITO-34_tizpyv.avif",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755512686/SANTA_MARIA_NOVELLA_FIRENZE_SITO-5_psxnfy.avif",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755512696/SANTA_MARIA_NOVELLA_FIRENZE_SITO-20_kzm32o.avif",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755512718/SANTA_MARIA_NOVELLA_FIRENZE_SITO-25_w19ukp.avif"
     ],
     details: {
       dove: "Firenze",
@@ -140,15 +140,35 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
       area: "2000 m²"
     }
   },
+  {
+    video: "https://res.cloudinary.com/dczzzutnf/video/upload/v1755512415/Hang_-_Napoli_Stazione_Centrale_Orizzontale_ougfgi.mp4",
+    title: "Napoli, Stazione Centrale",
+    projectImage: "https://res.cloudinary.com/dczzzutnf/image/upload/v1755510860/Stazione_Napoli_fgnpc2.avif",
+    shortDescription: `Un’opera straordinaria sotto la città! Abbiamo realizzato un ponteggio sotterraneo all’interno della metropolitana di Napoli...`,
+    description: "Un’opera straordinaria sotto la città! Abbiamo realizzato un ponteggio sotterraneo all’interno della metropolitana di Napoli, unendo precisione, sicurezza e innovazione. Scaviamo nel cuore della città per costruire il futuro.",
+    images: [
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755510860/Stazione_Napoli_fgnpc2.avif",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755510861/Stazione_Napoli_2_jtj7ms.avif",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755510860/Stazione_Napoli_3_dvqnsg.avif",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755510861/Stazione_Napoli_4_wzwhpz.avif",
+      "https://res.cloudinary.com/dczzzutnf/image/upload/v1755510861/Stazione_Napoli_5_vca6fk.avif"
+    ],
+    details: {
+      dove: "Napoli, Stazione Centrale",
+      durata: "6 mesi",
+      intervento: "Installazione ponteggi sotterranei",
+      area: "2.000 m²"
+    }
+  },
 ];
 
 export const mapProjects = [
   { 
     id: 0, 
-    position: [43.462862, 11.145787] as [number, number], 
+    position: [43.774701704532056, 11.249397845421413] as [number, number], 
     name: "Hang Srl al lavoro sulla storica chiesa di Santa Maria Novella, Firenze", 
     description: "Ponteggio sospeso temporaneo installato sulla celebre chiesa di Santa Maria Novella, uno dei simboli più iconici di Firenze...", 
-    imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752276368/abbazia_ljwxuq.webp",
+    imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1755512688/SANTA_MARIA_NOVELLA_FIRENZE_SITO-8_iuuutt.avif",
     showDiscoverLink: true
   },
   { 
@@ -199,12 +219,20 @@ export const mapProjects = [
     imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1753711300/ponte_rapallo_j9hxnp.webp",
     showDiscoverLink: true
   },
-   { 
+  { 
     id: 7, 
     position: [44.43058259297653, 8.789655983590677] as [number, number], 
     name: "Viadotto San Pietro, Genova", 
     description: 'Hang ha realizzato una passerella multidirezionale, completa di torre scala, per consentire in sicurezza gli interventi sul cordolo est...', 
     imageUrl: "",
     showDiscoverLink: false
+  },
+  { 
+    id: 7, 
+    position: [40.8524841569788, 14.272335167338227] as [number, number], 
+    name: "Napoli, Stazione Centrale", 
+    description: 'Un’opera straordinaria sotto la città! Abbiamo realizzato un ponteggio sotterraneo all’interno della metropolitana di Napoli...', 
+    imageUrl: "https://res.cloudinary.com/dczzzutnf/image/upload/v1755510860/Stazione_Napoli_fgnpc2.avif",
+    showDiscoverLink: true
   },
 ];
