@@ -9,7 +9,7 @@ const PortfolioPage = () => {
       <div className="relative w-full h-[40vh] sm:h-[50vh] overflow-hidden mb-8 sm:mb-16">
         <img 
           src="/assets/img/progetti.jpg" 
-          alt="Hero Image" 
+          alt="Ponteggi Sospesi" 
           className="absolute inset-0 w-full h-full object-cover filter blur-sm"
         />
         <div className="absolute inset-0 bg-black opacity-50"></div>
