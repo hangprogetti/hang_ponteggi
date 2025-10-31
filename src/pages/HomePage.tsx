@@ -45,7 +45,7 @@ const HomePage = () => {
           <video 
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover"
-            src="/assets/video/video_hero.mp4"
+            src="/assets/video/video_hero_2.mp4"
             autoPlay
             loop
             muted

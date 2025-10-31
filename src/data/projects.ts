@@ -21,7 +21,7 @@ Un intervento pensato per valorizzare e preservare uno dei capolavori storici de
     }
   },
   {
-    video: "/assets/video/ponte.mp4",
+    video: "/assets/video/video_hero_2.mp4",
     title: "Ponte di Doccio, Valsesia",
     projectImage: "https://res.cloudinary.com/dczzzutnf/image/upload/v1752513207/ponte_doccio_xx6uiy.webp",
     shortDescription: `Hang ha realizzato una struttura che permette di lavorare su tutto il ponte, in condizioni di massima sicurezza ed affidabilità...`,
